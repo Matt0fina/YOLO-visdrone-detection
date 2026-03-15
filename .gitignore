@@ -1,0 +1,16 @@
+# Python & OS
+__pycache__/
+.venv/
+.DS_Store
+
+# YOLO Data (Matching your sidebar names)
+datasets/
+runs/
+VisDrone2019-DET-test-challenge/
+VisDrone2019-DET-test-dev/
+VisDrone2019-DET-train/
+VisDrone2019-DET-val/
+
+# Weights & Large Files
+*.pt
+*.docx
