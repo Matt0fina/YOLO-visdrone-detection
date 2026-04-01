@@ -1,16 +1,45 @@
-# Python & OS
-__pycache__/
+# =========================
+# Virtual Environments
+# =========================
+venv/
+env/
+.env/
 .venv/
-.DS_Store
 
-# YOLO Data (Matching your sidebar names)
-datasets/
-runs/
-VisDrone2019-DET-test-challenge/
-VisDrone2019-DET-test-dev/
-VisDrone2019-DET-train/
-VisDrone2019-DET-val/
+# =========================
+# Python & Jupyter Artifacts
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
 
-# Weights & Large Files
+# =========================
+# YOLO & Model Outputs
+# =========================
+# Ignore all saved model weights (GitHub has a 100MB file limit)
 *.pt
-*.docx
+*.pth
+*.onnx
+
+# Ignore the runs directory (prevents uploading gigabytes of training epochs)
+runs/
+# If you want to keep your final graphs/results, you can force git to track specific files later 
+# by using: git add -f runs/detect/train3/results.png
+
+# =========================
+# Datasets
+# =========================
+# Ignore downloaded dataset folders and zip files
+datasets/
+VisDrone*/
+*.zip
+*.tar.gz
+
+# =========================
+# IDEs and OS Files
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
