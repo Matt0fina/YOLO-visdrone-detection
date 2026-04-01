@@ -10,4 +10,4 @@ Instructions on how to clone this repository, install dependencies, and download
 ```bash
 git clone [https://github.com/yourusername/CMPE401-YOLO-Project.git](https://github.com/yourusername/CMPE401-YOLO-Project.git)
 pip install -r requirements.txt
-# Add commands to run your training scripts
+run code in ipynb file
