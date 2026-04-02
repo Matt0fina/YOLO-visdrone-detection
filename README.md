@@ -73,4 +73,28 @@ The observed overfitting on bounding box coordinates is likely due to the datase
 
 ## 🧪 Part III: Structured Experimental Design
 
-### Experimental Settings:
+A controlled experiment was conducted, changing one variable, to evaluate the baseline model's performance for object detections
+
+### 1. Experimental Settings:
+* **Experimental Variable:** 640x640
+* **Control Group:** YOLOv26n trained for 10 epochs, 8 batch size, and **640x640** resolution.
+* **Experimental Group:** YOLOv26n trained for 10 epochs, 8 batch size, and **1024x1024** resolution.
+* **Constants:** All other paramters (batch size, learning rate, augmentation, etc.) remained the same to clearly see the affect of the variable.
+
+### 2. Quantitve Results
+The following table outlines the perfermance difference between the baseline.
+
+| Metric | Baseline (640px) | Experiment (1024px) | Delta |
+| :--- | :--- | :--- | :--- |
+| **mAP@50** | 0.23438 | 0.3313 | +0.09692 |
+| **mAP@50-95** | 0.13159 | 0.2007 | +0.06911 |
+| **Validation Box Loss** | 2.17183 | 1.78897 | -0.38286 |
+| **Precision** | 0.32891 | 0.4108 | +0.08189 |
+| **Recall** | 0.25416 | 0.34304 | +0.08888 |
+
+<img width="1388" height="491" alt="image" src="https://github.com/user-attachments/assets/62b948fb-058c-4509-adaa-2e56db2e512a" />
+
+### 3. Analysis
+Increasing the input image resolution from 640 to 1024 shows an improvement to classification accuracy and precision. Because the VisDrone dataset has images with many small objects cluttered together, where the baseline 640px downscaling likely compressed critical object features into unrecognizable pixel clutters.
+
+With the higher 1024px resolution, the model had much more spatial data to work with. The higher resolution resulted in an increase mAP@50 and a noticeable reduction in Validation Box loss. The precision and recall from the results can also be seen to increase. Overall, providing the model with better quality inputs allowed it to accurately bound small objects without increasing the training epochs.
