@@ -71,4 +71,6 @@ The observed overfitting on bounding box coordinates is likely due to the datase
 **Dataset Size and Complexity:** The VisDrone dataset is highly complex, including dense scenes with different objects with very different sizes (e.g., tiny pedestrians vs. large vehicles). While the model easily learned *what* the objects were, drawing mathematically precise bounding boxes (which heavily impacts Box Loss) across such a massive, varied dataset is exceedingly difficult.
 * **Model Capacity:** The baseline model used was the **nano** version (YOLOv26n). While highly efficient, it has a relatively low parameter count (model capacity). Because its capacity is limited, it lacks the deep representational power needed to perfectly generalize the spatial coordinates of highly dense, small objects in unseen validation images, leading it to over-optimize (overfit) on the spatial coordinates of the training set instead.
 
+## 🧪 Part III: Structured Experimental Design
 
+### Experimental Settings:
