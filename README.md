@@ -88,7 +88,7 @@ The following table outlines the perfermance difference between the baseline.
 | :--- | :--- | :--- | :--- |
 | **mAP@50** | 0.23438 | 0.3313 | +0.09692 |
 | **mAP@50-95** | 0.13159 | 0.2007 | +0.06911 |
-| **Validation Box Loss** | 2.17183 | 1.78897 | -0.38286 |
+| **Validation Box Loss** | 2.13424 | 1.78897 | -0.34527 |
 | **Precision** | 0.32891 | 0.4108 | +0.08189 |
 | **Recall** | 0.25416 | 0.34304 | +0.08888 |
 
