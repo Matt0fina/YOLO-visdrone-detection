@@ -35,6 +35,7 @@ datasets/
 VisDrone*/
 *.zip
 *.tar.gz
+*.csv
 
 # =========================
 # IDEs and OS Files
