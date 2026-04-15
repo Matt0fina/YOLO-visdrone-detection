@@ -1,9 +1,16 @@
 # Design, Optimization, and Comparative Evaluation of Modern YOLO Models
-**Course:** CMPE 401 - Instructor-defined Project 1  
 **Author:** Matthew Ofina  
 
+## 📸 Challenge
+Modern object detection models are primarily trained and benchmarked on datasets which have large, prominient subjects which are easy to "see" and distinguish. However, as images are taken from further away, on aerial vehicles, objects appear smaller. A vehicle or a pedestrian could be represented by a bounded box with just a few pixels (10x10). Detecting small targets is a fundamental architectural challange with Convolutional Neural Networks (CNNs).
+
+### Visualizing the VisDrone Dataset
+To benchmark model performance for images taken from a distance, this project uses the **VisDrone** dataset.
+
 ## 📌 Project Overview
-This repository contains the complete experimental pipeline for training, analyzing, and optimizing YOLOv26 on the VisDrone-DET dataset. The objective is to evaluate real-time object detection capabilities.
+This repository contains the complete experimental pipeline for training, analyzing, and optimizing YOLOv26 on the VisDrone-DET dataset. The objective is to evaluate real-time object detection capabilities. The following shows the model detecting, identifying, and drawing bounding boxes for the targets in the validation set.
+<img width="1920" height="1100" alt="val_batch2_labels" src="https://github.com/user-attachments/assets/a2cf5d27-5b46-4c81-ad25-784ed954143a" />
+
 
 ## ⚙️ Setup and Reproduction
 The following are instructions on how to clone this repository, install dependencies, and download the VisDrone dataset to reproduce these results.
