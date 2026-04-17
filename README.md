@@ -15,7 +15,7 @@ This repository contains the complete experimental pipeline for training, analyz
 ## ⚙️ Setup and Reproduction
 The following are instructions on how to clone this repository, install dependencies, and download the VisDrone dataset to reproduce these results.
 ```bash
-git clone [https://github.com/yourusername/CMPE401-YOLO-Project.git](https://github.com/yourusername/CMPE401-YOLO-Project.git)
+git clone https://github.com/Matt0fina/YOLO-visdrone-detection.git
 pip install -r requirements.txt
 # run code in ipynb file
 ```
